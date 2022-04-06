@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <%!
 	private String name = "이건호";
 	private String phone = "010-0000-0000";
@@ -12,6 +11,7 @@
 		System.out.println(email);
 	}
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,12 +21,12 @@
 <body>
 	<%
 		for(int i = 0; i < 5; i++){
-			show();
+			//show();
 	%>
-		<p><%=name %></p>
-	<% 
+			<p><%=name %></p>
+	<%
 		}
-	%>	
+	%>
 	<h1>hello JSP</h1>
 </body>
 </html>
