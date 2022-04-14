@@ -1,9 +1,9 @@
 <%@page import="repository.user.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%
-    	User principalUser = (User)session.getAttribute("principal");
-    %>
+<%
+	User principalUser = (User)session.getAttribute("principal");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,10 +28,11 @@
 					<td>이메일</td>
 					<td><%=principalUser.getEmail() %></td>
 				</tr>
+				
 			</table>
 			<div>
 				<button type="button" class="profile-update-btn">회원 정보 수정</button>
-				<button type="button" class="password-update-btn">비밀번호 변경</button>
+				<button type="button" class="password-update-btn">비밀번호 변경</button>			
 			</div>
 		</div>
 	</div>
@@ -42,6 +43,7 @@
 		profileUpdateBtn.onclick = () => {
 			location.href = "/JspStudy_4084/profile/update";
 		}
+		
 		passwordUpdateBtn.onclick = () => {
 			location.href = "/JspStudy_4084/profile/update/password";
 		}

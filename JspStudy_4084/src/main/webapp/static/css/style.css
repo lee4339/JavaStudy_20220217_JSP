@@ -1,4 +1,4 @@
-*{
+* {
 	font-size: 14px;
 	
 	margin: 0px;
@@ -6,28 +6,24 @@
 	box-sizing: border-box;
 	
 	padding: 0px;
-	
-	
 }
 
-a{
+a {
 	text-decoration: none;
 	color: black;
-	
 }
 
-a:hover{
+a:hover {
 	color: gray;
 }
 
-#container{
+#container {
 	margin: 0px auto;
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	
 	width: 1000px;
 	height: 400px;
-	
 }
