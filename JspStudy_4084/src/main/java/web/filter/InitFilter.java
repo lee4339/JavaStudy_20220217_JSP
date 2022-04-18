@@ -17,21 +17,26 @@ import repository.AuthDao;
 import repository.AuthDaoImpl;
 import repository.UserDao;
 import repository.UserDaoImpl;
+import repository.file.FileDao;
+import repository.file.FileDaoImpl;
 
 @WebFilter(filterName = "servletContextInit")
 public class InitFilter implements Filter {
 	private DBConnectionMgr pool;
 	private AuthDao authDao;
 	private UserDao userDao;
+	private FileDao fileDao;
 
 	public void init(FilterConfig fConfig) throws ServletException {
 		pool = DBConnectionMgr.getInstance();
 		authDao = new AuthDaoImpl(pool);
 		userDao = new UserDaoImpl(pool);
+		fileDao = new FileDaoImpl(pool);
 		
 		ServletContext servletContext = fConfig.getServletContext();
 		servletContext.setAttribute("authDao", authDao);
 		servletContext.setAttribute("userDao", userDao);
+		servletContext.setAttribute("fileDao", fileDao);
 	}
     
 
