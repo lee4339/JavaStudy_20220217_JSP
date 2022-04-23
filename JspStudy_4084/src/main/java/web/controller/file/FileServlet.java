@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-import repository.file.FileDao;
+import repository.FileDao;
 import web.service.FileService;
 import web.service.FileServiceImpl;
 

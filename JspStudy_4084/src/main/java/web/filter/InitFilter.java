@@ -15,10 +15,10 @@ import javax.servlet.http.HttpServletRequest;
 import db.DBConnectionMgr;
 import repository.AuthDao;
 import repository.AuthDaoImpl;
+import repository.FileDao;
+import repository.FileDaoImpl;
 import repository.UserDao;
 import repository.UserDaoImpl;
-import repository.file.FileDao;
-import repository.file.FileDaoImpl;
 
 @WebFilter(filterName = "servletContextInit")
 public class InitFilter implements Filter {
